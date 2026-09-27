@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.UU_marketplace" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#1E88E5</item>
+        <item name="colorPrimaryVariant">#1565C0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#43A047</item>
+        <item name="colorSecondaryVariant">#2E7D32</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#0D47A1</item>
+    </style>
+</resources>

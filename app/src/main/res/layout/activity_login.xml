@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="UU Exchange"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus Electronics Marketplace"
+            android:textColor="#E0E0E0"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/etErpId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="10-digit ERP ID"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:background="@drawable/bg_input" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="Password (8+ chars)"
+                    android:inputType="textPassword"
+                    android:background="@drawable/bg_input" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvCaptcha"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="56dp"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:background="@drawable/bg_captcha" />
+
+                    <ImageButton
+                        android:id="@+id/btnRefreshCaptcha"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@android:drawable/ic_menu_rotate"
+                        android:contentDescription="refresh" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCaptchaInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Enter CAPTCHA"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="5"
+                    android:background="@drawable/bg_input" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#E53935"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Login"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

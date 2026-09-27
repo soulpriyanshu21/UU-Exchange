@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell an Item"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Item name (e.g., iPhone 11)"
+            android:inputType="text"
+            android:background="@drawable/bg_input"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/etItemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Price (e.g., ₹15000)"
+            android:inputType="number"
+            android:background="@drawable/bg_input"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/etItemDesc"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:hint="Description (condition, age, etc.)"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="@drawable/bg_input"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:text="Post Item"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button" />
+
+    </LinearLayout>
+</ScrollView>
